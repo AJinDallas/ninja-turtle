@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ninja Turtle</title>
+    
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+</head>
+
+<body>
+    <h1> Ninja Turtle Assignment</h1>
+    <div class="carousel"></div>
+        <div class="form-group"></div>
+            <div id="maindiv">
+                <input type="text" id="name" name="name" value="" placeholder="Name" />
+                <input type="text" id="weapon" name="name" value="" placeholder="Weapon" />
+                <input type="text" id="headbandcolor" name="name" value="" placeholder="Headband Color" />
+                <input type="text" id="catchphrase" name="name" value="" placeholder="Catch Phrase" />
+                <input type="text" id="attack" name="name" value="" placeholder="Favotite Attack" />
+                <button onclick="turtleProj.doAdd()">Add</button>
+
+
+                <div style="display:inline-block; min-height:200px;">
+                </div>
+                <table id="table" border="15px">
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Name</th>
+                            <th>Weapon</th>
+                            <th>Headband Color</th>
+                            <th>Catch Phrase</th>
+                            <th>Favorite Attack</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableResults"></tbody>
+            
+
+                </table>
+                  <div id="myEditModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title" id="mySmallModalLabel">Edit Contact</h4>
+                            </div>
+                            <div class="modal-body">
+                                
+                                <div>
+                                    <label>Name</label>
+                                    <input id="uname" class="form-control" type="text" name="Name" value="" placeholder="Turtle Name" />
+                                    <br />
+                                    <label>Weapon</label>
+                                    <input id="uweapon" class="form-control" type="text" name="Weapon" value="" placeholder="Weapon" />
+                                    <br />
+                                    <label>Headband Color</label>
+                                    <input id="uheadband" class="form-control" type="text" name="Headband Color" value="" placeholder="Headband Color" />
+                                    <br />
+                                    <label>Catch Phrase</label>
+                                    <input id="uphrase" class="form-control" type="text" name="Catch Phrase" value="" placeholder="Catch Phrase" />
+                                    <br />
+                                    <label>Favorite Attack</label>
+                                    <input id="uattack" class="form-control" type="text" name="Favorite Attack" value="" placeholder="Favorite Attack" />
+                                    <button type="submit" class="btn btn-warning" data-dismiss="modal" onclick="turtleProj.doSave()">Save</button>
+                                </div>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <script src="Scripts/jquery-2.1.3.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+   
+               </body>
+</html>

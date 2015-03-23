@@ -1,0 +1,22 @@
+﻿body { 
+background: #000 url(http://uiconstock.com/wp-content/uploads/2014/06/teenage_mutant_ninja_turtles_by_nebezial-1-1024x552.jpg) repeat top left scroll; 
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 15px; 
+line-height: 18px; 
+color: #333; 
+background-repeat:no-repeat;
+background-size:100% auto;
+} 
+#table{
+    margin-left: 450px
+}
+#table{
+    background-color:antiquewhite
+}
+h1{
+    color:white
+}
+#maindiv{
+    margin-left:10%;
+    margin-right:10%
+}
